@@ -1,0 +1,20 @@
+guests = ['Billy', 'Andy', 'Leo', 'Luca']
+guests.insert(0, 'Vova')
+guests.insert(2, 'Ron')
+guests.append('Karim')
+print("Sorry, only 2 guests will be invited on a birthday party((")
+s_1 = guests.pop()
+print(f'{s_1}, sorry, you cant be invited')
+s_2 = guests.pop()
+print(f'{s_2}, sorry, you cant be invited')
+s_3 = guests.pop()
+print(f'{s_3}, sorry, you cant be invited')
+s_4 = guests.pop()
+print(f'{s_4}, sorry, you cant be invited')
+s_5 = guests.pop()
+print(f'{s_5}, sorry, you cant be invited')
+print(f'{guests[0]}, You can come on my party')
+print(f'{guests[1]}, You can come on my party')
+del guests[1]
+del guests[0]
+print(guests)
