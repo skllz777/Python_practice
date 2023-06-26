@@ -19,5 +19,5 @@ cities = {
 }
 for city_name, city_info in cities.items():
     print(f"\ncity: {city_name.title()}")
-    full_info = f"{city_info['country']} {city_info['cityzens']} {city_info['fact']}"
+    full_info = f"situated in {city_info['country']}, population: {city_info['cityzens']}, {city_info['fact']}"
     print(f"\t full information: {full_info.title()}")
