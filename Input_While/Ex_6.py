@@ -1,5 +1,8 @@
-sandwich_orders = ['chicken', 'bbq', 'beef', 'vegan']
+sandwich_orders = ['pastarami', 'chicken', 'pastarami', 'bbq', 'beef', 'pastarami', 'vegan']
 finished_sandwiches = []
+print("Pastarami is end")
+while 'pastarami' in sandwich_orders:
+    sandwich_orders.remove('pastarami')
 while sandwich_orders:
     ready = sandwich_orders.pop()
     print(f"I made your {ready} sendwich")
