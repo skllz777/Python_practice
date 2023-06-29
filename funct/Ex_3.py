@@ -1,9 +1,19 @@
 def city_country(city, country):
     full_info = f'{city}, {country}'
     return full_info.title()
-info_1 = city_country('madrid', 'spain')
-info_2 = city_country('moscow', 'russia')
-info_3 = city_country('athens', 'greece')
-print(info_1)
-print(info_2)
-print(info_3)
+
+
+while True:
+    print("Please enter information: ")
+    print("If you want to quit, enter 'q'")
+
+    city_name = input("Enter city name: ")
+    if city_name == 'q':
+        break
+
+    count_name = input("Enter country: ")
+    if count_name == 'q':
+        break
+
+information = city_country(city_name, count_name)
+print(f"{information}")
