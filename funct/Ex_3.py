@@ -15,5 +15,5 @@ while True:
     if count_name == 'q':
         break
 
-information = city_country(city_name, count_name)
-print(f"{information}")
+    information = city_country(city_name, count_name)
+    print(f"Here your info: {information}")
