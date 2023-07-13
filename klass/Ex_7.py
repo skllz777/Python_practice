@@ -7,6 +7,7 @@ class Car():
 
     def get_descriptive_name(self):
         long_name = f'{self.year} {self.make} {self.model}'
+        print(long_name)
 
     def read_odometer(self):
         print(f'This car has {self.odometer_reading} miles on it')
@@ -51,6 +52,8 @@ class Battery():
 
 
 my_tesla = ElectricCar('Tesla', '2', 2023)
+my_tesla.get_descriptive_name()
 my_tesla.battery.get_range()
+my_tesla.get_descriptive_name()
 my_tesla.battery.upgrade_battery()
 my_tesla.battery.get_range()
